@@ -1,6 +1,6 @@
 class Allergies
-attr_reader :num
-  def initialize(num)
+attr_reader :num, :products
+  def initialize(num=0)
     @num = num
     @products = {
       128 => "cats",
@@ -26,5 +26,6 @@ attr_reader :num
     p allergies
   end
 end
+
 test = Allergies.new(151)
-test.sort
+test.sort(50)
